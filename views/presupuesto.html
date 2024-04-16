@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <meta name="author" content="Jose Garcia Aguilar">
+    <meta name="locality" content="madrid, españa">
+    <meta name="category" content="espadas, dagas, venta">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../images/favicon.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <img class="logo" src="../images/logo.jpg" width="512" height="512" alt="logo">    
+        <h1>Aeterna Armeria</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../views/productos.html">PRODUCTOS</a></li>
+            <li><a href="../views/presupuesto.html" class="active">PRESUPUESTO</a></li>
+            <li><a href="../views/contacto.html" >CONTACTO</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <form class="formulario" name="formulario" method="post">
+            <label>Nombre:</label> 
+            <input class="caja"  type="text" name="nombre" title="Nombre" required><br>
+            <label>Email:</label> 
+            <input class="caja" type="email" name="email" title="Email" required><br>
+            <label>Teléfono:</label>
+            <input class="caja" type="tel" name="telefono" title="Teléfono" pattern="[0-9]{9}" required ><br>
+            <label>Especificaciones del arma:</label>
+            <textarea name="uso" cols="30" rows="6" required 
+                placeholder="Cuentenos las especificaciones que quiere para su espada"></textarea>
+            <input class="caja" type="checkbox" name="casilla" required>
+            He leido y acepto la politica de privacidad.
+            <input type="submit" name="boton" value="Enviar"><br>
+        </form>
+     </main>  
+     <footer>
+        <p class="pie">Dirección: C/ de la Cruz Verde 2, 28005 Madrid</p>
+        <a href="https://www.facebook.com/?locale=es_ES">
+            <img src="../images/facebook.jpg" alt="facebook" width="225" height="225" class="imgRedes">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="../images/insta.avif" alt="instagram"  width="626" height="626" class="imgRedes">
+        </a>
+        <a href="https://twitter.com/?lang=es">
+            <img src="../images/Twitter.jpg" alt="twitter" width="630" height="320" class="imgRedes">
+        </a>
+        <P class="pie">AVISO LEGAL. Los datos personales que facilite al Titular pueden 
+            ser almacenados en bases de datos automatizadas o no, cuya titularidad 
+            corresponde en exclusiva a el Titular, que asume todas las medidas de 
+            índole técnica, organizativa y de seguridad que garantizan la confidencialidad, 
+            integridad y calidad de la información contenida en las mismas de acuerdo con lo 
+            establecido en la normativa vigente en protección de datos.</P>
+    </footer>
+    
+</body>
+</html>
